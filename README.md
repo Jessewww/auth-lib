@@ -14,5 +14,5 @@ npm install
 
 ```paste token you have generated from client```
 
-Authorization="token_from_client" index.js
+Authorization="token_from_client" node index.js
 
