@@ -4,7 +4,7 @@ const { handler }= require('./src/controller/AuthController');
 const event = (process.env.Authorization) 
   ? {
       headers: {
-        Authorization: process.env.Authorization // Postavite token koji želite da testirate
+        Authorization: process.env.Authorization
       },
       requestContext: {
         resourcePath: '/your/resource/path',
@@ -13,7 +13,7 @@ const event = (process.env.Authorization)
     }
   : {
       headers: {
-        Authorization: 'token' // Postavite token koji želite da testirate
+        Authorization: 'token'
       },
       requestContext: {
         resourcePath: '/your/resource/path',
