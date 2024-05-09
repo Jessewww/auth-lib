@@ -21,7 +21,6 @@ const event = (process.env.Authorization)
       }
     };
 
-console.log(event);
 
 handler(event, null, (error, response) => {
   if (error) {

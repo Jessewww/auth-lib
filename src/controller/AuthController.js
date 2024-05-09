@@ -8,6 +8,8 @@ module.exports.handler = async (event) => {
 
   try {
     const decodedToken = await verifyToken(clientToken);
+    console.log("##### USER #####");
+    console.log(decodedToken.email);
     let active = '';
 
      active = true; // Do something to check if user is active or similar
